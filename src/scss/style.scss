@@ -1,0 +1,107 @@
+@import 'font';
+
+
+
+
+
+// ****************** ШРИФТ ****************************
+
+// &display=swap&subset=cyrillic-ext
+// @import url();
+
+@import url("https://fonts.googleapis.com/css?family=Lato:300,regular,500,600,700,&display=swap");
+
+$fontFamily: 'Lato';
+
+// ****************** ШРИФТ ****************************
+
+
+
+// ****************** ЗМІННІ ****************************
+
+$maxWidthContainer: 1240px;
+
+$md1: $maxWidthContainer+12;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 499.98px;
+
+$texColor: #000;
+$texColor: #000;
+$textGrey: #868686;
+
+$backgroundColor: #fff;
+
+$fontSize: 14px;
+
+// ****************** ЗМІННІ ****************************
+
+
+//  *******************************************
+@import '_reset';
+@import 'ui';
+
+html,
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: $fontSize;
+    background-color: $backgroundColor;
+    color: $texColor;
+    font-family: $fontFamily;
+
+    &._lock {
+        overflow: hidden;
+    }
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.page {
+    flex: 1 1 auto;
+}
+
+.__container {
+    padding: 0 10px;
+    max-width: $maxWidthContainer + 10px;
+    margin: 0 auto;
+
+    @media (max-width: $md1) {
+        max-width: 970px;
+    }
+
+    @media (max-width: $md2) {
+        max-width: 750px;
+    }
+
+    @media (max-width: $md3) {
+        max-width: none;
+    }
+}
+
+
+// ****************** HEADER ****************************
+
+@import 'header';
+
+// ****************** HEADER ****************************
+
+
+// ****************** HOME ****************************
+
+@import 'home';
+
+// ****************** HOME ****************************
+
+
+// ****************** FOOTER ****************************
+
+@import 'footer';
+
+// ****************** FOOTER ****************************
