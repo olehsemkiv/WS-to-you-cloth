@@ -1,4 +1,7 @@
 .footer {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
     background-color: #868686;
     // .footer__container
 
@@ -11,8 +14,6 @@
         @media (max-width: $md2) {
             padding: 20px 15px 20px 15px;
         }
-
-        
     }
 
     // .footer__logo-box
@@ -53,6 +54,7 @@
     &__body {
         display: flex;
         gap: 60px;
+        flex-wrap: wrap;
     }
 
     // .footer__list
@@ -65,8 +67,8 @@
         padding: 0 15px;
 
         @media (max-width: $md3) {
-            padding:  15px;
-        
+            padding: 15px;
+
         }
     }
 

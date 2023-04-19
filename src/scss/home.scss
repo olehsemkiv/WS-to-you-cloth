@@ -1,0 +1,483 @@
+.page {
+
+    // .page__front
+
+    &__front {}
+}
+
+.page {
+
+    // .page__advantages
+
+    &__advantages {}
+}
+
+
+.page {
+
+    // .page__sellers
+
+    &__sellers {}
+}
+
+.page {
+
+    // .page__reviews
+
+    &__reviews {}
+}
+
+// ====================================================================================================================================================
+
+
+// ====================================================================================================================================================
+// front
+// ====================================================================================================================================================
+.front {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    // .front__container
+
+    &__container {
+        height: 608px;
+
+        @media (max-width: $md2) {
+            height: 508px;
+        }
+
+        @media (max-width: $md3) {
+            height: 408px;
+        }
+    }
+
+    // .front__mySwiper
+
+    &__mySwiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    // .front__swiper-slide
+
+    &__swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .front__slide-box
+
+    &__slide-box {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: $md2) {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        @media (max-width: $md3) {
+            padding: 0 15px;
+            align-items: start;
+            flex-direction: column;
+        }
+    }
+
+    // .front__title
+
+    &__title {
+        position: relative;
+        z-index: 4;
+        font-weight: 700;
+        font-size: 4.125rem;
+        line-height: 119.69697%;
+        text-align: right;
+        text-transform: uppercase;
+        color: #000000;
+        margin: 0px 40px 10px 0px;
+
+        @media (max-width: $md2) {
+            text-align: left;
+            font-size: 45px;
+            margin: 0px 0px 30px 0px;
+        }
+
+        @media (max-width: $md3) {
+            font-size: 30px;
+            margin: 0px 0px 15px 0px;
+        }
+    }
+
+    // .front__btn
+
+    &__btn {
+        position: relative;
+        z-index: 4;
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 120.833333%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        display: inline-flex;
+        padding: 35px 45px 35px 45px;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+
+        @media (max-width: $md3) {
+            padding: 25px 25px 25px 25px;
+            font-size: 1.25rem;
+            z-index: 4;
+        }
+    }
+
+    // .front__swiper-pagination
+
+    &__swiper-pagination {
+        text-align: right;
+        left: -99px !important;
+        bottom: 40px !important;
+
+        .swiper-pagination-bullet {
+            background: transparent;
+            border: 2px solid #000;
+            width: 10px;
+            height: 10px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #000;
+        }
+
+        @media (max-width: $md3) {
+            text-align: center;
+            bottom: 15px !important;
+            left: 0 !important;
+        }
+    }
+}
+
+// ====================================================================================================================================================
+// advantages
+// ====================================================================================================================================================
+
+
+.advantages {
+
+    // .advantages__container
+
+    &__container {
+        padding: 120px 15px 0px 15px;
+
+        @media (max-width: $md3) {
+            padding: 40px 15px 0px 15px;
+        }
+    }
+
+    // .advantages__title
+
+    &__title {
+        margin: 0px 0px 60px 0px;
+
+        @media (max-width: $md3) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    // .advantages__body
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @media (max-width: $md2) {
+            justify-content: center;
+
+        }
+    }
+
+    // .advantages__item
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    // .advantages__item-img
+
+    &__item-img {
+        padding: 40px;
+        border-radius: 50%;
+        background-color: #000;
+        width: 170px;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 0px 20px 0px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    // .advantages__item-text
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 108.333333%;
+        text-align: center;
+        color: #000000;
+    }
+}
+
+// ====================================================================================================================================================
+// sellers
+// ====================================================================================================================================================
+
+.sellers {
+
+    // .sellers__container
+
+    &__container {
+        padding: 120px 15px 0px 15px;
+
+        @media (max-width: $md3) {
+            padding: 40px 15px 0px 15px;
+        }
+    }
+
+    // .sellers__title
+
+    &__title {
+        margin: 0px 0px 60px 0px;
+
+        @media (max-width: $md3) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    // .sellers__body
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    // .sellers__item
+
+    &__item {
+        flex: 1 1 20%;
+
+        @media (max-width: $md2) {
+            flex: 1 1 45%;
+        }
+
+        @media (max-width: $md3) {
+            flex: 1 1 100%;
+        }
+    }
+}
+
+.item-sell {
+
+    // .item-sell__image
+
+    &__image {
+        width: 100%;
+        padding-top: 278px;
+        margin: 0px 0px 30px 0px;
+    }
+
+    // .item-sell__info
+
+    &__info {}
+
+    // .item-sell__title
+
+    &__title {
+        margin: 0px 0px 10px 0px;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 121.428571%;
+        /* 17px/14 */
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    // .item-sell__price
+
+    &__price {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 121.428571%;
+        color: #868686;
+    }
+}
+
+// ====================================================================================================================================================
+// reviews
+// ====================================================================================================================================================
+
+
+.reviews {
+
+    // .reviews__container
+
+    &__container {
+        padding: 100px 15px;
+
+        @media (max-width: $md3) {
+            padding: 40px 15px;
+        }
+    }
+
+    // .reviews__title
+
+    &__title {
+        margin: 0px 0px 60px 0px;
+
+        @media (max-width: $md3) {
+            margin: 0px 0px 20px 0px;
+        }
+    }
+
+    // .reviews__mySwiper
+
+    &__mySwiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    // .reviews__swiper-slide
+
+    &__swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    // .reviews__swiper-box
+
+    &__swiper-box {
+        padding-bottom: 20px;
+    }
+
+    // .reviews__swiper-pagination
+
+    &__swiper-pagination {
+
+        .swiper-pagination-bullet {
+            background: transparent;
+            border: 2px solid #000;
+            width: 10px;
+            height: 10px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #000;
+        }
+
+    }
+}
+
+
+
+.item-review {
+
+    // .item-review__top
+
+    &__top {
+        padding: 53px 44px;
+        background: #EFEFEF;
+        margin: 0px 0px 30px 0px;
+
+        @media (max-width: $md3) {
+            padding: 33px 24px;
+
+        }
+    }
+
+    // .item-review__title
+
+    &__title {
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 133.333333%;
+        text-align: center;
+        color: #000000;
+        margin: 0px 0px 10px 0px;
+    }
+
+    // .item-review__text
+
+    &__text {
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 171.428571%;
+        text-align: center;
+        color: #868686;
+    }
+
+    // .item-review__botom
+
+    &__botom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    // .item-review__img
+
+    &__img {
+        margin: 0px 0px 10px 0px;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // .item-review__name
+
+    &__name {
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 155.555556%;
+        text-align: center;
+        color: #000000;
+    }
+}
